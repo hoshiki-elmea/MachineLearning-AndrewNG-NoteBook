@@ -40,10 +40,10 @@
 
 > 将上面的结果应用到梯度下降算法中，就得到了回归的梯度下降算法：
 >
-> <img  src="http://latex.codecogs.com/svg.latex?\theta_0:=\alpha\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x)^{(i)}-y^{(i)})^2\times x^{(i)}_j"   title="http://latex.codecogs.com/svg.latex?\theta_0:=\alpha\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x)^{(i)}-y^{(i)})^2\times x^{(i)}_j"  />
+> <img  src="http://latex.codecogs.com/svg.latex?\theta_0:=\alpha\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x)^{(i)}-y^{(i)})\times x^{(i)}_j"   title="http://latex.codecogs.com/svg.latex?\theta_0:=\alpha\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x)^{(i)}-y^{(i)})\times x^{(i)}_j"  />
 >
-> <img  src="http://latex.codecogs.com/svg.latex?\theta_1:=\alpha\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x)^{(i)}-y^{(i)})^2\times x^{(i)}"   title="http://latex.codecogs.com/svg.latex?\theta_0:=\alpha\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x)^{(i)}-y^{(i)})^2(x^{(1)})^2\times x^{(i)}_1"  />
+> <img  src="http://latex.codecogs.com/svg.latex?\theta_1:=\alpha\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x)^{(i)}-y^{(i)})\times x^{(i)}"   title="http://latex.codecogs.com/svg.latex?\theta_0:=\alpha\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x)^{(i)}-y^{(i)})^2(x^{(1)})\times x^{(i)}_1"  />
 >
-> <img  src="http://latex.codecogs.com/svg.latex?\theta_2:=\alpha\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x)^{(i)}-y^{(i)})^2\times x^{(i)}_2"   title="http://latex.codecogs.com/svg.latex?\theta_0:=\alpha\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x)^{(i)}-y^{(i)})^2(x^{(1)})^2\times x^{(i)}_2"  />
+> <img  src="http://latex.codecogs.com/svg.latex?\theta_2:=\alpha\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x)^{(i)}-y^{(i)})\times x^{(i)}_2"   title="http://latex.codecogs.com/svg.latex?\theta_0:=\alpha\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x)^{(i)}-y^{(i)})^2(x^{(1)})\times x^{(i)}_2"  />
 >
 > ...

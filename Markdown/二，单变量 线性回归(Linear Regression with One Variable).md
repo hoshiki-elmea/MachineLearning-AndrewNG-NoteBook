@@ -62,13 +62,13 @@
 >
 > <img  src="http://latex.codecogs.com/svg.latex?\frac{\partial&space;}{\partial\theta_j}J(\theta_0,\theta_1)=\frac{\partial&space;}{\partial\theta_j}\frac{1}{2m}\sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})^2\\=\frac{\partial}{\partial\theta_j}\frac{1}{2m}\sum_{i=1}^{m}(\theta_0&plus;\theta_1x^{(i)}-y^{(i)})^2"  title="http://latex.codecogs.com/svg.latex?\frac{\partial  }{\partial\theta_j}J(\theta_0,\theta_1)=\frac{\partial  }{\partial\theta_j}\frac{1}{2m}\sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})^2\\=\frac{\partial}{\partial\theta_j}\frac{1}{2m}\sum_{i=1}^{m}(\theta_0+\theta_1x^{(i)}-y^{(i)})^2"  />
 >
-> <img  src="http://latex.codecogs.com/svg.latex?If~~~\theta_j=\theta_0,j=0:\frac{\partial}{\partial&space;\theta_0}J(\theta_0,\theta_1)=\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})^2"   title="http://latex.codecogs.com/svg.latex?If~~~\theta_j=\theta_0,j=0:\frac{\partial}{\partial   \theta_0}J(\theta_0,\theta_1)=\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})^2"  />
+> <img  src="http://latex.codecogs.com/svg.latex?If~~~\theta_j=\theta_0,j=0:\frac{\partial}{\partial&space;\theta_0}J(\theta_0,\theta_1)=\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})"   title="http://latex.codecogs.com/svg.latex?If~~~\theta_j=\theta_0,j=0:\frac{\partial}{\partial   \theta_0}J(\theta_0,\theta_1)=\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})"  />
 >
-> <img  src="http://latex.codecogs.com/svg.latex?If~~~\theta_j=\theta_1,j=1:\frac{\partial}{\partial&space;\theta_1}J(\theta_0,\theta_1)=\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})^2\times x^{(i)}"   title="http://latex.codecogs.com/svg.latex?If~~~\theta_j=\theta_1,j=1:\frac{\partial}{\partial   \theta_1}J(\theta_0,\theta_1)=\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})^2\times x^{(i)}"  />
+> <img  src="http://latex.codecogs.com/svg.latex?If~~~\theta_j=\theta_1,j=1:\frac{\partial}{\partial&space;\theta_1}J(\theta_0,\theta_1)=\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})\times x^{(i)}"   title="http://latex.codecogs.com/svg.latex?If~~~\theta_j=\theta_1,j=1:\frac{\partial}{\partial   \theta_1}J(\theta_0,\theta_1)=\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})\times x^{(i)}"  />
 
 > 将上面的结果应用到梯度下降算法中，就得到了回归的梯度下降算法：
 >
-> <img  src="http://latex.codecogs.com/svg.latex?\theta_0:=\alpha\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x)^{(i)}-y^{(i)})^2(x^{(i)}_0)"   title="http://latex.codecogs.com/svg.latex?\theta_0:=\alpha\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x)^{(i)}-y^{(i)})^2(x^{(0)})"  />
+> <img  src="http://latex.codecogs.com/svg.latex?\theta_0:=\alpha\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x)^{(i)}-y^{(i)})(x^{(i)}_0)"   title="http://latex.codecogs.com/svg.latex?\theta_0:=\alpha\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x)^{(i)}-y^{(i)})(x^{(0)})"  />
 >
-> <img  src="http://latex.codecogs.com/svg.latex?\theta_1:=\alpha\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x)^{(i)}-y^{(i)})^2\times x^{(i)}"   title="http://latex.codecogs.com/svg.latex?\theta_0:=\alpha\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x)^{(i)}-y^{(i)})^2(x^{(1)})^2\times x^{(i)}"  />
+> <img  src="http://latex.codecogs.com/svg.latex?\theta_1:=\alpha\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x)^{(i)}-y^{(i)})\times x^{(i)}"   title="http://latex.codecogs.com/svg.latex?\theta_0:=\alpha\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x)^{(i)}-y^{(i)})^2(x^{(1)})\times x^{(i)}"  />
 
