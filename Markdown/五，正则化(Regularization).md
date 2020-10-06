@@ -2,7 +2,7 @@
 
 当将这些未修正的算法应用到某些特定的机器学习应用时，会遇到**过拟合(over-fitting)**的问题，可能会导致它们效果很差。
 
-<img src="/home/hosh/图片/081949392689088.png" alt="081949392689088" style="zoom: 67%;" />
+![过拟合](https://raw.githubusercontent.com/hoshiki-elmea/MachineLearning-AndrewNG-NoteBook/main/Images/overfitting.jpg)
 
 > 第一个模型是一个线性模型，欠拟合，不能很好地适应我们的训练集
 >
@@ -95,8 +95,6 @@
 > 梯度下降
 >
 > <img src="http://latex.codecogs.com/svg.latex?\begin{align*} & \text{Repeat}\ \lbrace \newline & \ \ \ \  \theta_0 := \theta_0 - \alpha\ \frac{1}{m}\ \sum_{i=1}^m  (h_\theta(x^{(i)}) - y^{(i)})x_0^{(i)} \newline & \ \ \ \ \theta_j  := \theta_j - \alpha\ \left[ \left( \frac{1}{m}\ \sum_{i=1}^m  (h_\theta(x^{(i)}) - y^{(i)})x_j^{(i)} \right) +  \frac{\lambda}{m}\theta_j \right], \ \ \ j \in \lbrace  1,2...n\rbrace\newline & \rbrace \end{align*}" title="http://latex.codecogs.com/svg.latex?\begin{align*} & \text{Repeat}\ \lbrace \newline & \ \ \ \  \theta_0 := \theta_0 - \alpha\ \frac{1}{m}\ \sum_{i=1}^m  (h_\theta(x^{(i)}) - y^{(i)})x_0^{(i)} \newline & \ \ \ \ \theta_j  := \theta_j - \alpha\ \left[ \left( \frac{1}{m}\ \sum_{i=1}^m  (h_\theta(x^{(i)}) - y^{(i)})x_j^{(i)} \right) +  \frac{\lambda}{m}\theta_j \right], \ \ \ j \in \lbrace  1,2...n\rbrace\newline & \rbrace \end{align*}" />
->
-> $$
 >
 > 也可以移项得到更新表达式的另一种表示形式
 >
