@@ -24,6 +24,16 @@
 >
 > <img src="http://latex.codecogs.com/svg.latex?X_j^{(i)}" title="http://latex.codecogs.com/svg.latex?X_j^{(i)}" />代表特征矩阵中第i行的第j个特征
 
+* 决策边界(Decision Boundary)
+
+  **所谓决策边界就是能够把样本正确分类的一条边界，主要有线性决策边界(linear decision boundaries)和非线性决策边界(non-linear decision boundaries)。**
+
+  注意：决策边界是假设函数的属性，由参数决定，而不是由数据集的特征决定。
+
+  ![线性决策边界](https://raw.githubusercontent.com/hoshiki-elmea/MachineLearning-AndrewNG-NoteBook/main/Images/linear_decision_boundaries.jpg)
+
+  ![非线性决策边界](https://raw.githubusercontent.com/hoshiki-elmea/MachineLearning-AndrewNG-NoteBook/main/Images/Non_linear_decision_boundaries.jpg)
+
 **（三）Logistic回归代价函数(对数损失函数)(Cost Function)**
 
 > 使用均方误差，由于最终的值都是0和1，就会产生震荡，此时是无法进行求导的。
