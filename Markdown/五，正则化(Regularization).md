@@ -94,7 +94,7 @@
 
 > 梯度下降
 >
-> <img src="http://latex.codecogs.com/svg.latex?\begin{align*} & \text{Repeat}\ \lbrace \newline & \ \ \ \  \theta_0 := \theta_0 - \alpha\ \frac{1}{m}\ \sum_{i=1}^m  (h_\theta(x^{(i)}) - y^{(i)})x_0^{(i)} \newline & \ \ \ \ \theta_j  := \theta_j - \alpha\ \left[ \left( \frac{1}{m}\ \sum_{i=1}^m  (h_\theta(x^{(i)}) - y^{(i)})x_j^{(i)} \right) +  \frac{\lambda}{m}\theta_j \right], \ \ \ j \in \lbrace  1,2...n\rbrace\newline & \rbrace \end{align*}" title="http://latex.codecogs.com/svg.latex?\begin{align*} & \text{Repeat}\ \lbrace \newline & \ \ \ \  \theta_0 := \theta_0 - \alpha\ \frac{1}{m}\ \sum_{i=1}^m  (h_\theta(x^{(i)}) - y^{(i)})x_0^{(i)} \newline & \ \ \ \ \theta_j  := \theta_j - \alpha\ \left[ \left( \frac{1}{m}\ \sum_{i=1}^m  (h_\theta(x^{(i)}) - y^{(i)})x_j^{(i)} \right) +  \frac{\lambda}{m}\theta_j \right], \ \ \ j \in \lbrace  1,2...n\rbrace\newline & \rbrace \end{align*}" />
+> <img  src="http://latex.codecogs.com/svg.latex?\begin{align*}&\text{Repeat}\lbrace\\&~~~~~~~~~~~\theta_0:=\theta_0-\alpha\frac{1}{m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})x_0^{(i)}\\&~~~~~~~~~~~~\theta_j:=\theta_j-\alpha[(\frac{1}{m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})x_j^{(i)})&plus;\frac{\lambda}{m}\theta_j],~~~~~~j&space;\in&space;\lbrace1,2...n\rbrace\\&~~~~~~~~~~\rbrace\end{align*}"   title="http://latex.codecogs.com/svg.latex?\begin{align*}&\text{Repeat}\lbrace\\&~~~~~~~~~~~\theta_0:=\theta_0-\alpha\frac{1}{m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})x_0^{(i)}\\&~~~~~~~~~~~~\theta_j:=\theta_j-\alpha[(\frac{1}{m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})x_j^{(i)})+\frac{\lambda}{m}\theta_j],~~~~~~j  \in \lbrace1,2...n\rbrace\\&~~~~~~~~~~\rbrace\end{align*}" />
 >
 > 也可以移项得到更新表达式的另一种表示形式
 >
@@ -102,21 +102,19 @@
 
 > 正规方程
 >
-> <img src="http://latex.codecogs.com/svg.latex?X=\begin{bmatrix}(x^{(1)})^T\\.\\.\\.\\(x^{(m)})^T\end{bmatrix}~~~~~y=\begin{bmatrix}y^{(1)}\\.\\.\\.\\y^{(m)}\end{bmatrix}
-> \\\min_\theta J(\theta)
-> \frac{\partial}{\partial\theta_j}J(\theta)\overset{set}{=}0
-> \\\Rightarrow\Theta=(X^TX-\lambda(L^{(n+1)}_{(n+1)}))
-> \\L^{(n+1)}_{(n+1)}=\begin{bmatrix}0&  &  &  &  \\& 1&  &  &  \\&  & 1&  &  \\&  &  & 1&  \\&  &  &  & ...\end{bmatrix}" title="http://latex.codecogs.com/svg.latex?X=\begin{bmatrix}(x^{(1)})^T\\.\\.\\.\\(x^{(m)})^T\end{bmatrix}~~~~~y=\begin{bmatrix}y^{(1)}\\.\\.\\.\\y^{(m)}\end{bmatrix}
-> \\\min_\theta J(\theta)
-> \frac{\partial}{\partial\theta_j}J(\theta)\overset{set}{=}0
-> \\\Rightarrow\Theta=(X^TX-\lambda(L^{(n+1)}_{(n+1)}))
-> \\L^{(n+1)}_{(n+1)}=\begin{bmatrix}0&  &  &  &  \\& 1&  &  &  \\&  & 1&  &  \\&  &  & 1&  \\&  &  &  & ...\end{bmatrix}" />
+> <img  src="http://latex.codecogs.com/svg.latex?X=\begin{bmatrix}(x^{(1)})^T\\.\\.\\.\\(x^{(m)})^T\end{bmatrix}~~~~~y=\begin{bmatrix}y^{(1)}\\.\\.\\.\\y^{(m)}\end{bmatrix}"   title="http://latex.codecogs.com/svg.latex?X=\begin{bmatrix}(x^{(1)})^T\\.\\.\\.\\(x^{(m)})^T\end{bmatrix}~~~~~y=\begin{bmatrix}y^{(1)}\\.\\.\\.\\y^{(m)}\end{bmatrix}"  />
 >
-> 
+> <img  src="http://latex.codecogs.com/svg.latex?\min_\theta&space;J(\theta)"  title="http://latex.codecogs.com/svg.latex?\min_\theta J(\theta)" />
+>
+> <img  src="http://latex.codecogs.com/svg.latex?\frac{\partial}{\partial\theta_j}J(\theta)\overset{set}{=}0"   title="http://latex.codecogs.com/svg.latex?\frac{\partial}{\partial\theta_j}J(\theta)\overset{set}{=}0"  />
+>
+> <img  src="http://latex.codecogs.com/svg.latex?\Rightarrow\Theta=(X^TX-\lambda(L^{(n&plus;1)}_{(n&plus;1)}))"   title="http://latex.codecogs.com/svg.latex?\Rightarrow\Theta=(X^TX-\lambda(L^{(n+1)}_{(n+1)}))"  />
+>
+> <img  src="http://latex.codecogs.com/svg.latex?L^{(n&plus;1)}_{(n&plus;1)}=\begin{bmatrix}0&0&0&0&0...\\0&1&0&0&0...\\0&0&1&0&0...\\0&0&0&1&0...\\0&0&0&0&1...\end{bmatrix}"   title="http://latex.codecogs.com/svg.latex?L^{(n+1)}_{(n+1)}=\begin{bmatrix}0&0&0&0&0...\\0&1&0&0&0...\\0&0&1&0&0...\\0&0&0&1&0...\\0&0&0&0&1...\end{bmatrix}"  />
 >
 > <img src="http://latex.codecogs.com/svg.latex?eg~~~n=2~~~~~L=\begin{bmatrix} 0&  0&  0\\ 0&  1&  0\\ 0&  0&  1\\ \end{bmatrix}" title="http://latex.codecogs.com/svg.latex?eg~~~n=2~~~~~L=\begin{bmatrix} 0&  0&  0\\ 0&  1&  0\\ 0&  0&  1\\ \end{bmatrix}" />
 >
-> 前文提到正则化可以解决正规方程法中不可逆的问题，即增加了 <img src="http://latex.codecogs.com/svg.latex?\lambda \cdot L" title="http://latex.codecogs.com/svg.latex?\lambda \cdot L" />正则化项后，可以保证<img src="http://latex.codecogs.com/svg.latex?X^TX + \lambda \cdot L" title="http://latex.codecogs.com/svg.latex?X^TX + \lambda \cdot L" />可逆(invertible)，即便 <img src="http://latex.codecogs.com/svg.latex?X^TX" title="http://latex.codecogs.com/svg.latex?X^TX" /> 不可逆(non-invertible)。
+> 前文提到正则化可以解决正规方程法中不可逆的问题，即增加了 <img src="http://latex.codecogs.com/svg.latex?\lambda\cdot L" title="http://latex.codecogs.com/svg.latex?\lambda\cdot L" />正则化项后，可以保证<img src="http://latex.codecogs.com/svg.latex?X^TX+\lambda\cdot L" title="http://latex.codecogs.com/svg.latex?X^TX+\lambda\cdot L" />可逆(invertible)，即便 <img src="http://latex.codecogs.com/svg.latex?X^TX" title="http://latex.codecogs.com/svg.latex?X^TX" /> 不可逆(non-invertible)。
 
 3,逻辑回归正则化(Regularized Logistic Regression)
 
@@ -128,5 +126,5 @@
 
 > 梯度下降
 >
-> <img src="http://latex.codecogs.com/svg.latex?\begin{align*} & \text{Repeat}\ \lbrace \newline & \ \ \ \  \theta_0 := \theta_0 - \alpha\ \frac{1}{m}\ \sum_{i=1}^m  (h_\theta(x^{(i)}) - y^{(i)})x_0^{(i)} \newline & \ \ \ \ \theta_j  := \theta_j - \alpha\ \left[ \left( \frac{1}{m}\ \sum_{i=1}^m  (h_\theta(x^{(i)}) - y^{(i)})x_j^{(i)} \right) +  \frac{\lambda}{m}\theta_j \right], \ \ \ j \in \lbrace  1,2...n\rbrace\newline & \rbrace \end{align*}" title="http://latex.codecogs.com/svg.latex?\begin{align*} & \text{Repeat}\ \lbrace \newline & \ \ \ \  \theta_0 := \theta_0 - \alpha\ \frac{1}{m}\ \sum_{i=1}^m  (h_\theta(x^{(i)}) - y^{(i)})x_0^{(i)} \newline & \ \ \ \ \theta_j  := \theta_j - \alpha\ \left[ \left( \frac{1}{m}\ \sum_{i=1}^m  (h_\theta(x^{(i)}) - y^{(i)})x_j^{(i)} \right) +  \frac{\lambda}{m}\theta_j \right], \ \ \ j \in \lbrace  1,2...n\rbrace\newline & \rbrace \end{align*}" />
+> <img  src="http://latex.codecogs.com/svg.latex?\begin{align*}&\text{Repeat}\lbrace\\&~~~~~~~~~~~\theta_0:=\theta_0-\alpha\frac{1}{m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})x_0^{(i)}\\&~~~~~~~~~~~~\theta_j:=\theta_j-\alpha[(\frac{1}{m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})x_j^{(i)})&plus;\frac{\lambda}{m}\theta_j],~~~~~~j&space;\in&space;\lbrace1,2...n\rbrace\\&~~~~~~~~~~\rbrace\end{align*}"   title="http://latex.codecogs.com/svg.latex?\begin{align*}&\text{Repeat}\lbrace\\&~~~~~~~~~~~\theta_0:=\theta_0-\alpha\frac{1}{m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})x_0^{(i)}\\&~~~~~~~~~~~~\theta_j:=\theta_j-\alpha[(\frac{1}{m}\sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})x_j^{(i)})+\frac{\lambda}{m}\theta_j],~~~~~~j  \in \lbrace1,2...n\rbrace\\&~~~~~~~~~~\rbrace\end{align*}" />
 
